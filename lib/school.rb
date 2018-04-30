@@ -13,7 +13,8 @@ class School
     if @roster.has_key?(grade_int)
       @roster[grade_int] << student_name
     elsif @roster == {} || !(@roster.has_key?(grade_int))
-      @roster[grade_int] = student_name
+      @roster[grade_int] = []
+      @roster[grade_int] = student_name.split()
   end
 
   def roster
