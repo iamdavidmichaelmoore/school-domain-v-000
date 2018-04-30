@@ -15,6 +15,7 @@ class School
     elsif @roster == {} || !(@roster.has_key?(grade_int))
       @roster[grade_int] = []
       @roster[grade_int] << student_name
+    end
   end
 
   def roster
