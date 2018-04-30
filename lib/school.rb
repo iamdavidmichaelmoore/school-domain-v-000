@@ -27,8 +27,7 @@ class School
     @roster.each do |grade, roster|
       if grade_int == grade
         list << roster
-      end 
-
+      end
     end
     list 
   end
