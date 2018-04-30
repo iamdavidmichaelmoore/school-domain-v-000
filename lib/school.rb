@@ -35,4 +35,13 @@ class School
   def sort
     @roster.sort_by {|grade, roster| roster}
   end
+
+  def sort
+    new_hash = {}
+    @roster.each do |grade, roster|
+      sorted = roster.sort
+      new_hash[grade] = []
+      new_hash[grade] = roster
+    end
+    new_hash
 end
