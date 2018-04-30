@@ -23,13 +23,13 @@ class School
   end
 
   def grade(grade_int)
-    list = []
+    list = ""
     @roster.each do |grade, roster|
       if grade_int == grade
-        roster
+        list = roster
       end
-      roster
     end
+    list
   end
 
   def sort
