@@ -1,2 +1,5 @@
 # code here!
-school = Schoo.new("Bayside High School")
+class School
+  def initialize(school)
+    @school = school
+    roster = {}
