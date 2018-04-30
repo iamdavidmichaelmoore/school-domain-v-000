@@ -39,9 +39,8 @@ class School
   def sort
     new_hash = {}
     @roster.each do |grade, roster|
-      sorted = roster.sort
       new_hash[grade] = []
-      new_hash[grade] = roster
+      new_hash[grade] = roster.sort
     end
     new_hash
   end
