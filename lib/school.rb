@@ -44,4 +44,5 @@ class School
       new_hash[grade] = roster
     end
     new_hash
+  end
 end
