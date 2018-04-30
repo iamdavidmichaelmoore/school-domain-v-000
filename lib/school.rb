@@ -16,6 +16,10 @@ class School
       @roster[grade_int] = student_name
   end
 
+  def roster
+    @roster
+  end
+
   def grade(grade)
     #create code to retrieve all students in the grade given
   end
