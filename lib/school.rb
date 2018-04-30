@@ -26,10 +26,10 @@ class School
     list = []
     @roster.each do |grade, roster|
       if grade_int == grade
-        list << roster
+        roster
       end
+      roster
     end
-    list
   end
 
   def sort
