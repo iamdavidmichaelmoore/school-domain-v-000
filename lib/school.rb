@@ -21,8 +21,16 @@ class School
     @roster
   end
 
-  def grade(grade)
+  def grade(grade_int)
     #create code to retrieve all students in the grade given
+    list = []
+    @roster.each do |grade, roster|
+      if grade_int == grade
+        list << roster
+      end 
+
+    end
+    list 
   end
 
   def sort
